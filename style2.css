@@ -53,8 +53,8 @@ body {
                 inset 0 15px 15px rgba(0, 0, 0, 0.3);
 
     display: flex;
-    justify-content: center; /* to center the needles*/
-    align-items: center; /* to center the needles*/
+    justify-content: center; /* to center the hands*/
+    align-items: center; /* to center the hands*/
 }
 
 /*
@@ -83,6 +83,7 @@ body {
     z-index: 800;
 }
 
+/* Without the following properties, the hand is on the wrong size of the axle */
 .clock .min,
 .mn {
     width: 190px;
@@ -107,6 +108,7 @@ body {
     border-radius: 50%;
 }
 
+/* These are the real handles */
 .hr:before {
     content: '';
     position: absolute;

@@ -1,0 +1,45 @@
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* The width and height properties (and min/max properties) includes content, padding and border
+    */
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    background-color: rgb(238, 238, 238);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* minimum height of an element. vh: viewport height */
+    /* */
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    background: url(clock.png);
+    background-color: white; 
+    /* Resize the background image to 
+        cover the entire container, even if it has to stretch the image 
+        or cut a little bit off one of the edges
+    */
+    background-size: cover;       
+
+    border: 4px solid #09192134;
+    border-radius: 50%;     /* make the clock round*/
+    /*
+    Clock shadow :
+    */
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), 
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+
+}
